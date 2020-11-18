@@ -1,0 +1,17 @@
+<% const META_DATA = {
+  title: "express-todo",
+  viewport: "width=device-width, initial-scale=1.0",
+  description: "このページはejsで構成されています。",
+  keywords: "node.js, express, ejs",
+  resetCss: '/css/reset.css',
+  styleCss: '/css/style.css'
+}; %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="<%= META_DATA.viewport %>">
+  <meta name="description" content="<%= META_DATA.description %>">
+  <meta name="keywords" content="<%= META_DATA.keywords %>">
+  <title><%= META_DATA.title %></title>
+  <link rel="stylesheet" href="<%= META_DATA.resetCss %>">
+  <link rel="stylesheet" href="<%= META_DATA.styleCss %>">
+</head>

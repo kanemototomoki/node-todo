@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.wrapper {
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.list {
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.list__item {
+  border: dashed 2px #c0c0c0;
+  padding: 10px;
+  min-width: 30vw;
+  justify-self: center;
+}
+
+.list__item p + p,
+.list__actions {
+  margin-top: 10px;
+}
+
+.addForm {
+  text-align: center;
+}

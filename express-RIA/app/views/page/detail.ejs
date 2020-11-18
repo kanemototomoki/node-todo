@@ -1,0 +1,12 @@
+<form class="editForm" method="POST">
+  <label>タイトル:
+    <input name="todo-title" value="<%= todo.title %>">
+  </label>
+  <label>内容:
+    <input name="todo-content" value="<%= todo.content %>">
+  </label>
+  <div class="list__actions">
+    <input type="submit" class="edit__button" value="更新" formaction="/todo/<%= todo.id %>?_method=PUT">
+    <input type="submit" class="delete__button" value="削除" formaction="/todo/<%= todo.id %>?_method=DELETE">
+  </div>
+</form>
